@@ -1,0 +1,742 @@
+body, html{
+    height: 100%;
+    margin: 0;
+   background-color: rgb(230,204,255);
+   }
+a {
+    font-family: arial;
+    text-decoration: none;
+    margin: 10;
+  }
+  a:visited {
+    color: rgb(88, 8, 168);
+  }
+  a:active, a:focus {
+    color:rgb(0, 162, 255);
+  }
+  img {
+      vertical-align: middle;
+    }
+.top_{
+    overflow: hidden;
+    width: 100%; 
+    z-index: 5;
+}
+.compose::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+.compose{
+    color: white;
+}
+.logobar{
+    overflow: hidden; 
+    background-color:  rgb(34, 2, 65);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*border-bottom: 1px solid rgb(93, 7, 179);*/
+}
+.logocontainer{
+    overflow: hidden;
+}
+#logoimage{
+    float:left; /* add this */
+    margin-top: 2px;
+    width: 70px;
+    height: 70px;
+}
+.searchlogo{ 
+    left: 50%;
+    right: 50%;
+}
+.searchcontainer{
+    margin-top: 15;
+    border: 1px solid rgb(34, 2, 65);
+    display: flex;
+}
+.searchkeywords{
+   height: 35px;
+   width: 700px;
+}
+#container_{
+height: 100%;
+}
+.showArticles{
+    margin-top: 10;
+    margin-left: 10;
+    border: 1px solid rgb(216, 216, 216);
+    background-color:white;
+    border-radius: 25px;
+    width: 70%;
+    color: black;
+}
+#description{
+	opacity: 0.9;
+	position: absolute;
+	top: 20%;
+	left: 1%;
+	text-align: left;
+    font-size:34px ;
+	color: white;
+}
+#LinkButtons{
+    background-color: rgb(34, 2, 65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#indexbuttons{
+    margin-top: 10;
+    margin-left: 10;
+    margin-bottom: 10;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.imagebutton{
+    border: 1px solid rgb(70, 4, 136);
+    border-radius: 25px;
+    height: 250px;
+    width: 250px;
+    margin-top: 5;
+    margin-left: 30;
+}
+#gradetext{
+    margin-left: 35%;
+    color: blue;
+}
+#linkbar{
+    background-color: rgb(34, 2, 65);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    border: 1px solid white;
+    overflow-x: auto;
+    overflow: hidden;
+}
+#linkbar a{
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100;
+    left: 15%;
+    top: 10%;
+    width: 70%;
+    height: 70%;
+    overflow: auto;
+    background-color: transparent;
+    
+}
+.modal-content{
+    background-color: white;
+    padding: 2;
+    margin: auto;
+    width: 80%;
+}
+.close{
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+.slideshow_container {
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: relative;
+  background-color: rgb(34, 2, 65);
+}
+.backgrund_video{
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
+  width: 100%;
+  text-align: left;
+}
+.click_me{
+    color: #f2f2f2;
+    font-size: 70px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50%;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+.titles{
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 60%;
+    left: 10%;
+    width: 100%;
+    text-align: left;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color:  rgb(34, 2, 65);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.titledescription{
+    color: white;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 30%;
+    overflow: hidden;  
+}
+.mytextdescription{
+    overflow: hidden;
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 25%;   
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(0, 162, 255);
+    border: 3px solid white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation: myvideo 6s infinite;
+    animation-direction: alternate;
+}
+.games{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(0, 162, 255);
+    border: 3px solid white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation: mygames 5s infinite;
+    animation-direction: alternate;
+}
+.books{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(0, 162, 255);
+    border: 3px solid white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation: mybook 6s infinite;
+    animation-direction: alternate;
+}
+.video:hover{
+    cursor: pointer;
+}
+.games:hover{
+    cursor: pointer;
+}
+.books:hover{
+    cursor: pointer;
+}
+@keyframes mybook {
+    from {right: 5%;top:25%;transform:rotate(0deg); }
+    to {right: 15%;top:40%;transform:rotate(-40deg); }
+  }
+@keyframes mygames {
+    from {left: 40%;top:25%;transform:rotate(0deg); }
+    to {left: 50%;top:15%;transform:rotate(40deg); }
+  }
+  @keyframes myvideo {
+    from {left: 5%;top:15%;transform:rotate(10deg); }
+    to {left: 15%;top:25%;transform:rotate(50deg); }
+  }
+.content_description{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+table{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+.mybody{
+    background-color: rgb(34, 2, 65);
+}
+.btn {
+    background-color: rgb(34, 2, 65);
+    border: 1px solid black; /* Remove borders */
+    color: white; /* White text */
+    padding: 9px 13px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    height: 35px;
+  }
+  .btn:hover {
+    background-color: rosybrown;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky + .container_ {
+    padding-top: 10%;
+  }
+
+  .top_bar{
+      background-color: rgb(34, 2, 65);
+      height: 10px;
+  }
+.vid_container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .icon_{
+      color: white;
+  }
+  .content_{
+    color: rgb(34, 2, 65);
+    margin: 15;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+.text_{
+    color: #f2f2f2;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+}
+.text_:hover{
+    cursor: pointer;
+}
+.text_modal{
+    display: none;
+    padding: 10;
+    color: #f2f2f2;
+    font-size: 16px;
+    opacity: 0.9;
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    top:32%;
+    background-color: black;
+}
+.x_close{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.x{
+    color: white;
+    font-size: 16px;
+}
+.x:hover,
+.x:focus{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+.options{
+    cursor: pointer;
+}
+.right_left_container{
+    width: 100%;
+    height: 116%;
+    display: flex;
+    flex-direction: row;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+.right_side{
+    background-color:black;
+    opacity: 0.9;
+    width: 75%;
+    height: 100%;
+}
+.right_side_txt{
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+}
+.left_side{
+    background-color:black;
+    opacity: 0.9;
+    width: 25%;
+    height:100%;
+    border: 1px solid white;
+}
+.chosen_contents{
+    max-width: 100%;
+    max-height: 100%;
+}
+.chosen_contents:hover{
+    cursor: pointer;
+}
+.left_right_box{
+    color: white;
+    height: 38%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+.social_icons{
+    margin-left: 2%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.captions{
+    background-color: transparent;
+    width:80%;
+    height: 200px;
+    margin-left: 10%;
+    margin-top: 10;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.arrows{
+   color: white;
+   font-size: 90px;
+   cursor: pointer;
+}
+.arrows_{
+    color: rgb(34, 2, 65);
+    font-size: 150px;
+ }
+.scroll_items{
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    background-color: transparent;
+    height: 75%;
+    width: 100%;
+}
+.play_btn{
+    overflow: hidden;
+    bottom: 20%;
+    left: 30%;
+    width: 25%;
+    height: 25%;
+    color: white;
+}
+.play_btn:hover{
+    cursor: pointer;
+}
+.pause_btn{
+    overflow: hidden;
+    display: none;
+    bottom: 20%;
+    left: 30%;
+    width: 25%;
+    height: 25%;
+    color: white;  
+}
+.pause_btn:focus{
+    cursor: pointer;
+    z-index: 3;
+}
+.vid_cntainer{
+    background-color: black;
+    width: 100%;
+    height: 60%;
+}
+.book_container{
+    background-color: black;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+}
+#vid1{
+    height: fit-content;
+    width: fit-content;
+    min-width: 100%;
+    min-height: 100%;
+}
+.game_container{
+    width: 100%;
+    height: 100%;
+}
+.linkbar_two{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    background-color: rgb(34, 2, 65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkbars{
+    display: flex;
+    flex-direction: column;
+}
+#canvas_container {
+    height: 95%;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#navigation_controls{
+    display: flex;
+    justify-content: center;
+}
+.reviewVideo{
+    margin: 10;
+    color: rgb(34, 2, 65);
+    background-color: white;
+    border: 1px solid rgb(34, 2, 65);
+    border-radius: 25px;
+    width: 60%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.videos_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pending_videos{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 10;
+    width: 40%;
+}
+.table_{
+    overflow: hidden;
+    width: 24%;
+    height: 200px;
+}
+.manage_divs{
+display: none;
+}
+.my_link_divs{
+    display: flex;
+    flex-direction: row; 
+    font-family: arial;
+    cursor: pointer;
+}
+.spanning_class{
+    margin-top: 25;
+}
+#my_manager:hover{
+    opacity: 0.8;
+}
+.my_iframe{
+    background-color: white;
+    margin-left: 15%;
+    width: 70%;
+    overflow-x: hidden;
+    height: 70%;
+}
+.theArticle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.no_articles{
+   color: rgb(0, 162, 255);
+    text-align: center;
+}
+.contactUsDivs{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-family: arial;
+}
+.contactUs{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.sendComment{
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: white;
+    margin-top: 30;
+    height: 40px;
+    width: 25%;
+    cursor: pointer;
+}
+.commentInputField_{
+    width: 700px;
+    height: 50px;
+    margin-top: 30;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+.contactUsForm{
+    display: flex;
+    flex-direction: row;
+}
+.myfooter{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.s_icon{
+    padding: 10px; 
+    color: rgb(34, 2, 65); 
+    min-width: 100px; 
+    margin-bottom: 20;
+    text-align: center;
+}
+input[type=text]:focus{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(0, 162, 255);
+}
+.userComments{
+    font-size: 20px;
+    margin-left: 5%;
+    color:rgb(93, 93, 93)
+}
+.contactUs_{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+.matchingPass{
+   color: rgb(0, 162, 255);
+}
+.header_links{
+    color: white;
+    opacity: 0.8;
+    position: absolute;
+    font-size: 25px;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    text-align: right;
+  }
+  .theLinks:hover{
+      cursor: pointer;
+  }

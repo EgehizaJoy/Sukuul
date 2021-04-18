@@ -1,0 +1,645 @@
+* {
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    max-height: 90%;
+    display: block;
+}
+#instructions{
+    color: white;
+}
+#grade{
+    background-color: aqua;
+    color: blue;
+    margin-top: unset;
+    height: 33px;
+}
+#gradecontainer{
+    margin-top: 20;
+    margin-bottom: 10;
+    background-color: white;
+    border: 1px solid aqua;
+    height: 30%;
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    size: 20px;
+}
+.gradetitle{
+    font-size: medium;
+    color: blue;
+}
+.imagebutton1{
+   margin-top: 5;
+   width: 20%;
+   height:80%;
+   border: 1ps solid violet;
+   border-radius: 25px;
+   margin-left: 10%;
+}
+#themecontainer{
+    position: relative;
+    background-color: #fff;
+    margin-top: 20;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10;
+    overflow: hidden;
+    height: 50%;
+    width: 96%;
+    border: 1px solid rgb(21, 255, 0);
+}
+#overview{
+    position: relative;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow:hidden;
+}
+#themebuttons{
+    position: absolute;
+    top: 0;
+    margin-left: 0;
+    margin-right: 8px;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    overflow: auto;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#indexbuttons1{
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    height: 30px;
+    width: 150px;
+    font-size: 17px;
+}
+.uploadForm{
+    background-color: whitesmoke;
+    color: rgb(34, 2, 65);
+    text-align: center;
+    margin-top: 10;
+    margin-bottom: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    width: 80%;
+}
+#formdesign{
+    width: 100%;
+    height: 100%;
+}
+#headerimagebtn{
+    background-color: rgb(0, 162, 255);
+    color: white;
+    border: 1px solid white;
+    height: 30px;
+    width: 150px;
+    font-size: 17px;
+}
+#myheadercontainer{
+    margin-bottom: 10;
+    background-color: whitesmoke;
+    border: 1px solid aqua;
+    width: 90%;
+    margin-left: 5%;
+    color: blue;
+
+    font-size: 20px;
+}
+.title{
+    width: 90%;
+    height: 35px;
+    margin-top: 10;
+    background-color: white;
+    border: 1px solid rgb(173, 173, 173);
+}
+.body{
+    width: 90%;
+    background-color: white;
+    height: 300px;
+    border: 1px solid rgb(173, 173, 173);
+}
+.submit{
+    margin-left: 20;
+    margin-top: 10;
+}
+#bodybuttons{
+    margin-top: 10;
+    margin-left:20;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    width: 90%;
+}
+#bButtons{
+    margin-right: 5;
+}
+.shareLink{
+    color: rgb(32, 2, 65);
+    margin-left: 5%;
+}
+.comments{
+    margin-top: 15;
+    margin-left: 5%;
+}
+#comments{
+    margin-left: 5%;
+
+}
+.commentDiv{
+   width: 50%;
+}
+.submitComment{
+    margin-top: 5;
+    display: none;
+    float: right;
+    background-color: rgb(34, 2, 65);
+    color: white;
+    width: 15%;
+    height: 35px;
+    border: 1px solid rgb(34, 2, 65);
+}
+.comment{
+    height: 35px;
+    width: 100%;
+}
+
+textarea:focus{
+    outline-color: rgb(0, 162, 255);
+}
+.articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.editpubdelete{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pubdelete{
+    margin-top: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.headerimage{
+    margin-top: 2%;
+    background-color: whitesmoke;
+    background-image: url('assets/images/slider2.jpg');
+}
+.headerImagediv{
+    overflow-x: hidden;
+    margin-bottom: 5;
+    max-width: 90%;
+    margin-left: 5%;
+    max-height: 90%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.title_tag{
+    margin-top: 5;
+    margin-bottom: 5;
+    margin-left: 5%;
+    font-size: larger;
+   
+}
+.byline{
+    margin-top: 20;
+    margin-bottom: 5;
+    margin-left: 5%;
+    font-style: italic;
+    
+}
+.pubdate{
+    margin-top: 20;
+    margin-left: 5%;
+  
+}
+.pagebody{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+.imageCaption{
+    margin-left: 2;
+    margin-right: 30;
+    width: 250px;
+    height: 200px;
+    border: 1px solid rgb(0, 162, 255);
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.login_container{
+    background-color: rgb(230, 204, 255);
+    display: flex;
+    border: 1px solid rgb(230, 204, 255);
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.signup_container{
+    background-color: rgb(230, 204, 255);
+    display: flex;
+    border: 1px solid rgb(230, 204, 255);
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.forgotPass_container{
+    background-color: rgb(230, 204, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logoc{
+    margin-top: 20;
+    height: 150px;
+    width: 150px;
+}
+.loginform{
+    background-color: white;
+    border: 1px solid rgb(230, 204, 255);
+    border-radius: 25px;
+    padding: 10;
+}
+.uploadGameContainer{
+    background-color: white;
+    border: 1px solid rgb(230, 204, 255);
+    border-radius: 25px;
+    padding: 10;
+    width: 80%;
+    margin-top: 50;
+}
+.signupform{
+    background-color: white;
+    border: 1px solid rgb(230, 204, 255);
+    border-radius: 25px;
+    padding: 10;
+}
+.signupform_{
+    background-color: white;
+    border: 1px solid rgb(230, 204, 255);
+    border-radius: 25px;
+    padding: 10;
+    width: 50%;
+    margin-top: 10;
+}
+.forgotPass_form{
+    background-color: white;
+    border: 1px solid rgb(34, 2, 65);
+    border-radius: 15px;
+}
+.input_field{
+    padding: 10px;
+    color: rgb(34, 2, 65);
+}
+.loginbtn{
+    background-color: rgb(34, 2, 65);
+    color: white;
+    width: 100%;
+    height: 35px;
+}
+.loginbtn:hover,
+.loginbtn:focus{
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: pointer;
+}
+.input-icons i { 
+    position: absolute; 
+} 
+  
+.input-icons { 
+    width: 100%; 
+    margin-bottom: 10px; 
+} 
+.s_icon{
+    color: black; 
+    font-size: x-large; 
+}  
+.icon { 
+    padding: 10px; 
+    color: rgb(34, 2, 65); 
+    min-width: 50px; 
+    text-align: center; 
+} 
+ .icon_{
+    padding: 10px; 
+    color: white; 
+    min-width: 50px; 
+    text-align: center; 
+ } 
+.input-field { 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center; 
+} 
+.link_icon{
+    padding: 10px; 
+    color: white; 
+    min-width: 50px; 
+}
+.linkicons{
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    align-content: flex-start;
+}
+.cpanel{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230, 204, 255);
+}
+.cpanel_divs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cpanel_items{
+    background-color: white;
+    border: 1px solid rgb(34, 2, 65);
+    border-radius: 20px;
+    padding: 10;
+    margin: 10;
+}
+.cpanel_personal{
+    background-color: white;
+    border: 1px solid rgb(34, 2, 65);
+    border-radius: 20px;
+    padding: 10;
+    margin: 10;
+}
+.txt_{
+    color:rgb(34, 2, 65);
+}
+.date_{
+    color: rgb(68, 2, 134);
+}
+.admin_items{
+    width: 50%;
+    margin-left: 25%;
+    background-color: white;
+    border: 1px solid rgb(34, 2, 65);
+    border-radius: 20px;
+    padding: 10;
+    margin-top:22;
+    text-align: center;
+}
+.admin_items_{
+    background-color: white;
+    border: 1px solid rgb(34, 2, 65);
+    padding: 10;
+    margin: 10;
+}
+.forgot_pass{
+    background-color: white;
+    border: 1px solid rgb(34, 2, 65);
+    padding: 10;
+    margin: 10;
+    text-align: center;
+}
+.login_popup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 20%;
+    left: 35%;
+    overflow: auto;
+}
+.signup_popup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 15%;
+    left: 35%;
+    overflow: auto;
+}
+.popup_btn{
+    background-color: red;
+    color: white;
+    width: 100%;
+    height: 35px;
+}
+.popup_btn:hover,
+.popup_btn:focus{
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: pointer;
+}
+.txt{
+    color: rgb(68, 2, 134);
+    font-size: 17px;
+}
+.txt:hover,
+.txt:focus{
+    color: rgb(0, 162, 255);
+    cursor: pointer;
+}
+.article_review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(51, 2, 100);
+    font-size: 17px;
+}
+.btn_type{
+    width: 20%;
+    background-color: rgb(32, 2, 65);
+    padding: 10;
+    color: white;
+    margin: 10;
+    border: 1px solid rgb(34, 2, 65);
+    border-radius: 15px;
+}
+.btn_type:hover,
+.btn_type:focus{
+    border: 1px solid rgb(0, 162, 255);
+    background-color: rgb(0, 162, 255);
+    cursor: pointer;
+}
+.btn_type_{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(32, 2, 65);
+    padding: 10;
+    color: white;
+    border: 1px solid rgb(34, 2, 65);
+    border-radius: 15px;
+}
+.btn_type_:hover,
+.btn_type_:focus{
+    border: 1px solid rgb(0, 162, 255);
+    background-color: rgb(0, 162, 255);
+    cursor: pointer;
+}
+.viewArticle{
+    background-color: white;
+}
+.table_data{
+    overflow: hidden;
+    width: 33%;
+    height: 33%;
+}
+.table_data_{
+    overflow: hidden;
+    width: 33%;
+    height: 500px;
+}
+#table_data{
+    background-color:white;
+    color:black;
+    text-align:center;
+    cursor: pointer;
+}
+#table_data:hover{
+    background-color: rgb(34, 2, 65);
+    color: white;
+    opacity: 0.7;
+}
+.tablefDiv{
+    text-align: center;
+    color: rgb(77, 77, 77);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.tableImage{
+    width: 100%;
+    height: 70%;
+    border-radius: 15px;
+}
+.flip-card {
+    width: 25%;
+    height: 100%;
+    margin: 1%;
+    background-color: WHITE;
+    border: 1px solid white;
+    color: rgb(32, 2, 65);
+    text-align: center;
+    font-size: larger;
+    border-radius: 15px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: WHITE;
+    border: 1px solid white;
+    border-radius: 25px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 25px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    text-align: center;
+    color: rgb(77, 77, 77);
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .flip-card-back {
+    text-align: center;
+    color: rgb(77, 77, 77);
+    background-color: white;
+    transform: rotateY(180deg);
+    cursor: pointer;
+  }
+  .go{
+      background-color: rgb(34, 2, 65);
+      border: 1px solid rgb(34, 2, 65);
+      border-radius: 15px;
+      color: white;
+      width: 30%;
+      height: 35px;
+  }
+  
+  .commentsCenter{
+    margin-left: 5%;
+}
+.grade_buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.grade_one{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 35%;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.spec_btn{
+width: 25%;
+height: 100%;
+margin: 1%;
+background-color: WHITE;
+border: 1px solid white;
+color: rgb(32, 2, 65);
+text-align: center;
+font-size: larger;
+border-radius: 15px;
+}
+.sorryDiv{
+    margin-top: 2%;
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    font-size: xx-large;
+    color: rgb(32, 2, 65);
+    font-family: arial;
+    background-color: white;
+    text-align: center;
+}
+.sorryImg{
+    width: 100%;
+    height: 70%;
+}
